@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Competition</title>
-    <link rel="stylesheet" href="quizapp.css">
+   <!-- <link rel="stylesheet" href="quizapp.css">-->
 </head>
 <body>
     <h1>Quiz Competition</h1>
-    <div id="container">
-        <h4>1. Which data structure is used to represent complex relationships between the nodes</h4>
-        <ol type="a">
-            <div id="option1">
-                <li>Arrays</li> <li>Linked lists</li>
+    <div class="container">
+        <div class="hide" id="answer-buttons">
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer1</button>
+                <button class="btn">Answer2</button>
+                <button class="btn">Answer3</button>
+                <button class="btn">Answer4</button>
             </div>
-            <div id="options2">
-                <li>Trees</li> <li>Graphs</li>
-            </div>
-        </ol>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start">Start</button>
+            <button id="next-btn" class="btn-hide">Next</button>
+        </div>
+        <div class="score">
+            <span id="right-answer"></span>
+        </div>
     </div>
 </body>
 </html>

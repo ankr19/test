@@ -1,16 +1,18 @@
+:root{
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct:145;
+}
+
 body{
-  background-color: teal;  
+  --hue: var(--hue-neutral);
+  padding: 0;
+  margin: 0%;
+  display: flex;
+  width: 100vw;
+  height: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue), 100%, 20%);
+  
 }
-
-* {
-    box-sizing: border-box;
-}
-
-#container{
-    margin: auto;
-    width: 50%;
-    padding: 16px;
-    background-color: white;
-    box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.6);
-}
-
