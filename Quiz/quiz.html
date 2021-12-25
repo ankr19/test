@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Competition</title>
-   <!-- <link rel="stylesheet" href="quizapp.css">-->
+    <link rel="stylesheet" href="quizapp.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Quiz Competition</h1>
     <div class="container">
-        <div class="hide" id="answer-buttons">
+        
+        <div id="question-container" class=hide>
+            <div id="question" class="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Answer1</button>
-                <button class="btn">Answer2</button>
-                <button class="btn">Answer3</button>
-                <button class="btn">Answer4</button>
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
             </div>
         </div>
+        
         <div class="controls">
-            <button id="start-btn" class="start">Start</button>
-            <button id="next-btn" class="btn-hide">Next</button>
-        </div>
-        <div class="score">
-            <span id="right-answer"></span>
+            <button id="start-btn" class="start-btn btn">start</button>
+            <button id="next-btn" class="next-btn btn hide">next</button>
         </div>
     </div>
 </body>
